@@ -1,0 +1,195 @@
+/* reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* conteiner */
+.container  {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+    @media (min-width: 1440px) {
+        .container {
+            max-width: 1440px;
+            padding: 0;
+        }
+    }
+
+/* linha */
+.row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+    .row:before,
+    .row:after {
+        content: "";
+        display: table;
+    }
+    .row:after {
+        clear: both;
+    }
+
+/* colunas */
+.col {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    margin-right: -4px;
+    *zoom: 1;
+    *display: inline;
+}
+    /* duas colonas */
+    @media (min-width: 720px) {
+        .col-2 {
+            width: 50%;
+        }
+    }
+
+    /* tres colunas */
+    @media (min-width: 728px) {
+        .col-3 {
+            width: 33.3333%;
+        }
+    }
+
+    /* sidebar */
+    @media (min-width: 992px) {
+        .col-content {
+            width: 60%;
+        }
+
+        .col-sidebar {
+           width: 40%;
+        }
+    }
+    @media (min-width: 720px;){
+      .nav{
+        width: 80%;
+        min-height: 100px;
+        margin: 50px 100px;
+        position: absolute;
+      }
+
+      .nav img {
+        float: left;
+      }
+      .icones{
+        float: right;
+        padding-right: 30px;
+      }
+
+    }
+
+/* USAR APENAS PARA DEMOSTRAÇÂO */
+.nav{
+  top: 0;
+  margin-top: 30px;
+}
+.nav img {
+  float: left;
+
+}
+
+.icones{
+  float: right;
+  padding-right: 30px;
+}
+.icones i{
+  width: 24px;
+  line-height: 30px;
+  padding: 0 10px;
+  color: #666;
+}
+
+.main{
+    padding: 0 100px;
+    margin-top: 80px;
+}
+
+.main h2{
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #1a1275;
+}
+
+.main p{
+  font-size: 18px;
+  color: hsl(0, 0%, 50%);
+  margin-bottom: 80px;
+}
+
+.signup{
+  padding: 0 100px;
+  font-weight: 700;
+}
+.signup h3{
+  color: #1a1275;
+  margin-bottom: 20px;
+  font-weight: 700;
+
+}
+
+.signup input[type=text]{
+  width: 300px;
+  background-color: #FFF;
+	color: hsl(0, 0%, 50%);
+	border-radius: 5px;
+	border-color: transparent;
+	padding: 15px 15px;
+	font-size: 22px;
+	margin-right: 10px;
+  box-shadow: 0.2em 0.2em 0.2em 0.001em rgba(0,0,0,25%);
+}
+
+.signup input[type=submit]{
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+	padding: 15px 20px;
+  border: 5px solid;
+  border-color: transparent;
+  border-radius: 5px;
+  background-color: hsl(163, 95%, 43%);
+  color: #FFF;
+  font-weight: 700;
+  box-shadow: 0.2em 0.2em 0.2em 0.001em rgba(0,0,0,25%);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.signup input[type=submit]:hover{
+ background-color: #0da177;
+}
+
+.signup a{
+  font-size: 12px;
+  float: right;
+  margin-right: 20px;
+  font-weight: 400;
+  color: hsl(0, 0%, 50%);
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+
+}
+.big {
+    height: 50px;
+}
+.esquerda{
+    background: url('images/bg-intro.svg') no-repeat;
+}
+@media (min-width: 375px) {
+  .esquerda {
+    height: 100%;
+    background: linear-gradient(135deg, rgba(26,18,117,1) 0%, rgba(101,96,178,1) 100%);
+  }
